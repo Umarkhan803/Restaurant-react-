@@ -39,9 +39,7 @@ const About = () => {
               eveniet quae consectetur mollitia animi.
             </p>
           </div>
-          <div className="img">
-            {/* <img src="/public/coff.jpg" alt="" /> */}
-          </div>
+          <div className="img"></div>
         </div>
       </section>
     </>

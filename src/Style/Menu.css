@@ -1,0 +1,91 @@
+.menu {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.MenuTxt {
+  text-align: center;
+  margin-top: 50px;
+}
+.food-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.food-card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.08);
+}
+.food-card img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.food-text h3 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.food-text button {
+  padding: 10px 15px;
+  margin: 15px 0px 0px 15px;
+  font-size: 17px;
+  border-radius: 0.6rem;
+  border: 2px solid deeppink;
+  cursor: pointer;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+}
+.food-text button:hover {
+  color: white;
+  background: #e2037a;
+}
+a {
+  text-decoration: none;
+  color: deeppink;
+  font-size: 18px;
+}
+.btn {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+/* btn */
+.View-Btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 0.6rem;
+  border: none;
+  cursor: pointer;
+  background: #e2037a;
+  color: white;
+  transition: 0.2s;
+}
+.View-Btn:hover {
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
