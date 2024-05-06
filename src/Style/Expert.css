@@ -15,13 +15,43 @@
   justify-content: center;
   align-items: center;
 }
-.chef {
+.chef-card {
   text-align: center;
   width: 340px;
   margin: 50px;
   border: 15px solid #fff;
   box-shadow: 0 5px 35px rgba(168, 166, 166, 0.555);
+  position: relative;
+  transition: 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 .img {
   width: 285px;
+  object-fit: cover;
+}
+
+.card-info {
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  color: #141010;
+  position: absolute;
+  padding: 10;
+  width: 285px;
+  height: 35%;
+  top: 100%;
+
+  border-radius: 0px 0px 15px 15px;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.chef-card:hover .card-info {
+  position: absolute;
+  top: 55.5%;
+  transition: 0.5s;
+  visibility: visible;
 }

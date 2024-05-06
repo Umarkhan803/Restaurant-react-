@@ -14,24 +14,39 @@ function Expert() {
           </p>
         </div>
         <div className="chef-box">
-          <div className="chef">
-            <div className="imgbox2">
-              <img className="img image1" src="images/chef1.jpg" />
+          <div className="chef-card">
+            <img className="img image1" alt="chef 1" src="images/chef1.jpg" />
+            <div className="card-info">
+              <h4>Chef 1</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, eveniet! Quas illum beatae nesciunt,
+              </p>
             </div>
-            <span className="food-iteam">Chef 1</span>
+            <span className="food-item">Chef 1</span>
           </div>
-          <div className="chef">
-            <div className="imgbox2">
-              <img className="img image1" src="images/chef2.jpg" />
+          <div className="chef-card">
+            <img className="img image1" alt="chef 2" src="images/chef2.jpg" />
+            <div className="card-info">
+              <h4>Chef 2</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, eveniet! Quas illum beatae nesciunt,
+              </p>
             </div>
-            <span className="food-iteam">Chef 2</span>
+            <span className="food-item">Chef 2</span>
           </div>
 
-          <div className="chef">
-            <div className="imgbox2">
-              <img className="img image1" src="images/chef.jpg" />
+          <div className="chef-card">
+            <img className="img image1" alt="chef 3" src="images/chef.jpg" />
+            <div className="card-info">
+              <h4>Chef 1</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, eveniet! Quas illum beatae nesciunt,
+              </p>
             </div>
-            <span className="food-iteam">Chef 3</span>
+            <span className="food-item">Chef 3</span>
           </div>
         </div>
       </section>
