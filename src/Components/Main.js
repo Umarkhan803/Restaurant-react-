@@ -1,5 +1,5 @@
 import React from "react";
-
+import Login from "./Login/Login";
 function Main() {
   return (
     <>
@@ -10,7 +10,7 @@ function Main() {
           quis error pariatur doloribus ab eos
         </p>
         <div>
-          <a href="/" className="button">
+          <a href={<Login />} className="button">
             Log In
           </a>
           <a href="/" className="button">

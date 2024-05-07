@@ -40,7 +40,7 @@ function Expert() {
           <div className="chef-card">
             <img className="img image1" alt="chef 3" src="images/chef.jpg" />
             <div className="card-info">
-              <h4>Chef 1</h4>
+              <h4>Chef 3</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Blanditiis, eveniet! Quas illum beatae nesciunt,
