@@ -1,19 +1,25 @@
 import React from "react";
-import Nav from "./Components/Nav";
-import Main from "./Components/Main";
-import About from "./Components/About";
-import Menu from "./Components/Menu";
-import Review from "./Components/Review";
-import Expert from "./Components/Expert";
+import Nav from "./Components/Pages/Nav";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import Cart from "./Components/Cart/Cart";
+import Index from "./Components/Index";
+
 function App() {
   return (
     <>
-      <Nav />
-      <Main />
-      <About />
-      <Menu />
-      <Review />
-      <Expert />
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path="" element={<Index />} />
+          <Route path="add" element={<Cart />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Login from "./Login/Login";
+import { Link } from "react-router-dom";
 function Main() {
   return (
     <>
@@ -10,15 +10,14 @@ function Main() {
           quis error pariatur doloribus ab eos
         </p>
         <div>
-          <a href={<Login />} className="button">
+          <a to="/login" className="button">
             Log In
           </a>
-          <a href="/" className="button">
+          <a to="signup" className="button">
             sign up
           </a>
         </div>
       </div>
-      <div></div>
     </>
   );
 }

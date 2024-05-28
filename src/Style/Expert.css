@@ -8,6 +8,16 @@
 .expert .MenuTxt {
   margin-top: 50px;
 }
+.expert-line {
+  position: absolute;
+  top: 16.5%;
+  left: 31.5%;
+  height: 5px;
+  justify-content: center;
+  width: 500px;
+  border: none;
+  background: #1efd00;
+}
 .chef-box {
   width: 100%;
   cursor: pointer;
@@ -37,21 +47,33 @@
 .card-info {
   background-color: transparent;
   backdrop-filter: blur(15px);
-  color: #141010;
   position: absolute;
-  padding: 10;
+  padding: 10px 10px 10px 10px;
   width: 285px;
   height: 35%;
   top: 100%;
-
   border-radius: 0px 0px 15px 15px;
   visibility: hidden;
   transition: 0.5s;
 }
 
+.chef-info h4 {
+  color: #141010;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.card-info p {
+  color: #141010;
+  font-size: 18px;
+  font-weight: 500;
+}
 .chef-card:hover .card-info {
   position: absolute;
-  top: 55.5%;
+  top: 58%;
   transition: 0.5s;
   visibility: visible;
+}
+.chef-name {
+  padding-top: 15px;
+  font-size: 1.5rem;
 }

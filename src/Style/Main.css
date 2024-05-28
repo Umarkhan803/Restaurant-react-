@@ -49,9 +49,9 @@
   text-decoration: none;
   list-style-type: none;
   border-radius: 0.6rem;
-  background: #e2037a;
+  background: #1efd00;
   color: white;
-  outline: 3px solid wheat;
+  outline: 3px solid rgb(255, 255, 255);
   outline-offset: -7px;
   transition: 0.2s;
 }

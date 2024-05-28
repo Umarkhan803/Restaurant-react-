@@ -7,7 +7,7 @@ const About = () => {
           <h3 className="about">
             <span className="A">A</span>bout us
           </h3>
-          <hr className="usline" />
+          <hr className="about-line" />
         </div>
         <div className="About-txt-Wrapper">
           <div className="About-txt">

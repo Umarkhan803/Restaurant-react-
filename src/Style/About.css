@@ -12,18 +12,21 @@
 }
 .A {
   font-size: 50px;
+  margin-right: 4px;
+  color: #1efd00;
 }
 section {
   margin-top: 50px;
 }
-.usline {
+.about-line {
   position: absolute;
-  top: 10%;
+  top: 9%;
   left: 43.5%;
   height: 5px;
   justify-content: center;
   width: 200px;
-  background: deeppink;
+  border: none;
+  background: #1efd00;
   margin-top: 50px;
 }
 .About-txt-Wrapper {
@@ -36,6 +39,10 @@ section {
 .About-txt {
   text-align: center;
   width: 50%;
+}
+.About-txt p {
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .img {

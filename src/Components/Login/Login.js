@@ -3,11 +3,7 @@ import React from "react";
 function Login() {
   return (
     <>
-      <form
-        className="Main"
-        action="index.html"
-        method="post"
-        onsubmit=" return valid()">
+      <form className="Main" action="index.html" method="post">
         <h2>Log in</h2>
         <div className="input-box">
           <input
