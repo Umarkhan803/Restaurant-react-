@@ -8,7 +8,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import Cart from "./Components/Cart/Cart";
-import Index from "./Components/Index";
+import Index from "./Components/Layout/Index";
 
 function App() {
   return (

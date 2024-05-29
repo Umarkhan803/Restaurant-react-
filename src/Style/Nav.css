@@ -47,9 +47,11 @@ h3 {
   margin-right: 25px;
   transition: 0.5s;
   overflow: hidden;
+  cursor: pointer;
 }
 
-.nav-links a:hover {
+.nav-links.material-symbols-outlined,
+a:hover {
   color: #1efd00;
   transition: 0.5s;
 }
@@ -70,8 +72,10 @@ h3 {
   transform-origin: center;
   transform: translateX(0);
 }
-i {
-  margin: 0px 6px 0px 0px;
+.material-symbols-outlined {
+  font-size: 25px;
+  cursor: pointer;
+  margin: 2px 2px 0px 0px;
 }
 .nav-links a {
   text-decoration: none;

@@ -57,6 +57,7 @@
 }
 .button:hover {
   letter-spacing: 3px;
+  color: white;
   transition: 0.5s;
   outline-offset: 3px;
 }
