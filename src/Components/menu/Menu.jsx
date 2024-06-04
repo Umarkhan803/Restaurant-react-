@@ -79,7 +79,7 @@ function Menu() {
           })}
         </div>
         <div className="btn">
-          <a href="Menu.html">
+          <a href="#">
             <button className="View-Btn"> View More</button>
           </a>
         </div>
