@@ -5,7 +5,8 @@ const Nav = () => {
     <>
       <header>
         <h3>
-          FOOD<span>.</span>
+          <a href="/">FOOD</a>
+          <span>.</span>
           <span></span>
         </h3>
 
@@ -17,15 +18,15 @@ const Nav = () => {
             </li>
             <span class="material-symbols-outlined">article</span>
             <li className="nav-links">
-              <a to="#about">About us</a>
+              <a href="#about">About us</a>
             </li>
             <span class="material-symbols-outlined">restaurant_menu</span>
             <li className="nav-links">
-              <a to="#menu">Menu</a>
+              <a href="#menu">Menu</a>
             </li>
             <span class="material-symbols-outlined">groups</span>
             <li className="nav-links">
-              <a to="#kitchen">Experts</a>
+              <a href="#kitchen">Experts</a>
             </li>
             <span class="material-symbols-outlined">shopping_bag</span>
             <li className="nav-links">

@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import Menulist from "./Menulist/Menulist";
-import { useNavigate } from "react-router-dom";
-function Menu() {
-  const navigate = useNavigate();
-  const goToMenuListItem = () => {
-    navigate("/menuList");
-  };
+
+function MenuListItems() {
   const [items, setItems] = useState([
     {
       id: 0,
@@ -61,6 +57,42 @@ function Menu() {
       ItemName: "Mutton Gravy",
       price: 540,
     },
+    {
+      id: 1,
+      ItemImg: "food11.jpg",
+      ItemName: "Chicken Tadoor",
+      price: 250,
+    },
+    {
+      id: 1,
+      ItemImg: "food12.jpg",
+      ItemName: "Fish Fry",
+      price: 350,
+    },
+    {
+      id: 1,
+      ItemImg: "food13.jpg",
+      ItemName: "Gulab Jaamun",
+      price: 99,
+    },
+    {
+      id: 1,
+      ItemImg: "food14.jpg",
+      ItemName: "Rass malai",
+      price: 99,
+    },
+    {
+      id: 1,
+      ItemImg: "food16.jpg",
+      ItemName: "White Chocolate ",
+      price: 149,
+    },
+    {
+      id: 1,
+      ItemImg: "food17.jpg",
+      ItemName: "Chocolate Cake",
+      price: 149,
+    },
   ]);
   return (
     <>
@@ -69,7 +101,6 @@ function Menu() {
           <h3 className="">
             Our <span className="A">M</span>enu
           </h3>
-          <hr className="menu-line" />
           <p className="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beata
           </p>
@@ -83,14 +114,9 @@ function Menu() {
             );
           })}
         </div>
-        <div className="btn">
-          <button onClick={goToMenuListItem} className="View-Btn">
-            View More
-          </button>
-        </div>
       </section>
     </>
   );
 }
 
-export default Menu;
+export default MenuListItems;

@@ -1,4 +1,5 @@
-data = [
+const { v4: uuid } = require("uuid");
+const data = [
   {
     id: uuid(),
     Image:
@@ -126,3 +127,4 @@ data = [
     Price: 149,
   },
 ];
+module.exports = data;

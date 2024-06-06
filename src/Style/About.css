@@ -9,25 +9,31 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  background-color: rgba(159, 159, 243, 0.144);
   width: 100%;
 }
 .About-Title {
   width: 100%;
-  margin-top: 20px;
-  height: 10vh;
+  margin-top: 60px;
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+.about {
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 .A {
   font-size: 50px;
   margin-right: 4px;
   color: #1efd00;
 }
-
 .about-line {
-  width: 200px;
+  width: 220px;
+  height: 5px;
   background: #1efd00;
 }
 .About-txt-Wrapper {
@@ -36,25 +42,24 @@
   justify-content: space-evenly;
   height: 100%;
 }
+h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
 .About-txt {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  text-align: center;
+  flex-direction: column;
   width: 50%;
-  height: 80%;
-}
-.img {
   height: 100%;
-  width: 50%;
 }
-img {
+.image {
+  width: 600px;
+  height: 400px;
   background-size: cover;
-  background-position: center;
   object-fit: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 300px;
-  width: 500px;
   border-radius: 15px;
-  box-shadow: 0px 5px 35px rgba(209, 207, 207, 0.87);
 }
