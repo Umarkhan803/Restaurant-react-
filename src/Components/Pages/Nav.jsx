@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 const Nav = () => {
   return (
@@ -12,7 +13,7 @@ const Nav = () => {
 
         <nav className="navigation">
           <ul className="nav-item">
-            <span class="material-symbols-outlined">home</span>
+            <FontAwesomeIcon icon="fa-solid fa-house" />
             <li className="nav-links">
               <Link to="">Home</Link>
             </li>
