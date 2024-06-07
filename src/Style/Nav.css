@@ -23,35 +23,57 @@ header {
   top: 0;
   z-index: 1;
 }
+.fa-utensils {
+  display: flex;
+}
+.dot {
+  margin-left: 5px;
+  color: #1efd00;
+  font-size: 2.5rem;
+}
+.logo1 {
+  text-decoration: none;
+  color: #000;
+  margin: 0;
+}
 h1 {
   font-family: "Fleur De Leah", cursive;
   font-weight: 700;
 }
 h3 {
   margin: 0px 0px 0px 20px;
+  font-weight: 400;
   cursor: pointer;
-  font-weight: 300;
   font-size: 30px;
 }
 
 .navigation {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
+}
+i {
+  display: flex;
+  margin-right: 2px;
 }
 .nav-item {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 25px;
+  margin-left: 5px;
   transition: 0.5s;
   overflow: hidden;
   cursor: pointer;
 }
 
-.nav-links.material-symbols-outlined,
-a:hover {
+.nav-links a:hover {
   color: #1efd00;
   transition: 0.5s;
 }
@@ -65,7 +87,7 @@ a:hover {
   width: 100%;
   z-index: 1;
   background-color: #1efd00;
-  transform: translateX(-100%);
+  transform: translateX(-150%);
   transition: 0.3s ease;
 }
 .nav-links a:hover::after {
@@ -81,4 +103,5 @@ a:hover {
   text-decoration: none;
   list-style-type: none;
   color: black;
+  margin-top: 8px;
 }

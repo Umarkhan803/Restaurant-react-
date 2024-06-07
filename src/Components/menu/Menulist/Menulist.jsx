@@ -9,7 +9,9 @@ const Menulist = ({ data }) => {
       <div className="food-text">
         <div className="food-info">
           <h3 className="food-item">{data.ItemName}</h3>
-          <span class="material-symbols-outlined star">star</span>
+          <i class="fa-solid fa-star">
+            <span className="rating">{data.ratings}</span>
+          </i>
         </div>
         <span className="price">&#8377; {data.price}</span>
         <button>Add to cart</button>

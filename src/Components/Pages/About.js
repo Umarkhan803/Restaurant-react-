@@ -14,7 +14,9 @@ const About = () => {
           <div className="About-txt">
             <h1>We Pride overselves on </h1>
             <h1>Making Real Food The</h1>
-            <h1>Best Ingredients</h1>
+            <h1>
+              Best Ingredients <span className="dot">.</span>
+            </h1>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             eveniet omnis, repellat quia ipsum sit eum, dolore mollitia in ullam
             deserunt, expedita dignissimos rerum voluptate. Inventore in

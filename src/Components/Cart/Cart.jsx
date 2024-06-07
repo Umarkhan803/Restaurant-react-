@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cart.css";
-function Cart({ data }) {
+function Cart() {
   return (
     <div className="cart">
       <div className="cartList">
@@ -8,9 +8,12 @@ function Cart({ data }) {
           <img src="images/food1.jpg" alt="img" />
           <div className="info">
             <h4>food Item</h4>
-            <span>lhfalhvbaosdhfb</span>
+            <span>information </span>
           </div>
-          <button className="remove-btn">Remove</button>
+          <button className="remove-btn">
+            Remove
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
         </div>
       </div>
       <div className="total-product">

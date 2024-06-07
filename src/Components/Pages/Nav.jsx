@@ -1,35 +1,35 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <>
       <header>
         <h3>
-          <a href="/">FOOD</a>
-          <span>.</span>
-          <span></span>
+          <a className="logo1" href="/">
+            FOOD
+          </a>
         </h3>
+        <span className="dot">.</span>
 
         <nav className="navigation">
           <ul className="nav-item">
-            <FontAwesomeIcon icon="fa-solid fa-house" />
             <li className="nav-links">
+              <i class="fa-solid fa-house"></i>
               <Link to="">Home</Link>
             </li>
-            <span class="material-symbols-outlined">article</span>
+            <i class="fa-solid fa-address-card"></i>
             <li className="nav-links">
               <a href="#about">About us</a>
             </li>
-            <span class="material-symbols-outlined">restaurant_menu</span>
+            <i class="fa-solid fa-list"></i>
             <li className="nav-links">
               <a href="#menu">Menu</a>
             </li>
-            <span class="material-symbols-outlined">groups</span>
+            <i class="fa-solid fa-user-group"></i>
             <li className="nav-links">
               <a href="#kitchen">Experts</a>
             </li>
-            <span class="material-symbols-outlined">shopping_bag</span>
+            <i class="fa-solid fa-cart-shopping"></i>
             <li className="nav-links">
               <Link to="/add">Add to chart</Link>
             </li>

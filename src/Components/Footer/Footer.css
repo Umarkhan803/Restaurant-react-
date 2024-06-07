@@ -4,9 +4,8 @@
   background-color: rgba(159, 159, 243, 0.308);
   display: flex;
   justify-content: space-between;
-  padding-left: 250px;
   color: #000000;
-  border-top: 2px solid rgba(255, 255, 255, 0.438);
+  border-top: 2px solid rgba(0, 0, 0, 0.438);
 }
 .comp,
 .comm,
@@ -16,11 +15,7 @@
   align-items: center;
   margin: 50px 0px 0px 50px;
 }
-.row1,
-.row2,
-.row3,
-.row4,
-.row5 {
+.row1 {
   display: flex;
 }
 .comp label,
@@ -50,25 +45,18 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 100px;
 }
 
-.logo hr {
-  background-color: #000000;
-}
-a i {
+.logo i {
   transition: 0.5s;
   padding: 10px;
+  font-size: 2rem;
   border-radius: 50%;
+  margin-right: 20px;
 }
-/* .logo a i:hover {
+.logo i:hover {
   background-color: rgb(255, 255, 255);
   color: black;
   scale: 1.2;
-} */
-
-.icon {
-  background-color: #000000;
-  color: #000000;
-  font-size: 20px;
 }

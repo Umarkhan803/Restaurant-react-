@@ -50,6 +50,21 @@
   outline-offset: -7px;
   transition: 0.2s;
 }
+.food-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating {
+  color: black;
+  margin-left: 5px;
+}
+.fa-star {
+  font-size: 20px;
+  margin-right: -30px;
+  font-weight: 400;
+  color: gold;
+}
 .button:hover {
   letter-spacing: 3px;
   color: white;

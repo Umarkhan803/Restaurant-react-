@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Menulist from "./Menulist/Menulist";
 
 function MenuListItems() {
-  const [items, setItems] = useState([
+  const [items] = useState([
     {
       id: 0,
       ItemImg: "food1.jpg",
