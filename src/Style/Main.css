@@ -71,3 +71,8 @@
   transition: 0.5s;
   outline-offset: 3px;
 }
+.warning {
+  height: 150px;
+  background-color: cadetblue;
+  width: 250px;
+}

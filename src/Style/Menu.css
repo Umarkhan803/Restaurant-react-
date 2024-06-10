@@ -37,6 +37,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  background-color: none;
   flex-wrap: wrap;
 }
 .food-card {
@@ -46,7 +47,7 @@
   flex-direction: row;
   width: 340px;
   margin: 20px;
-  border: 15px solid #fff;
+  border: 15px solid #fdfcfc;
   border-radius: 20px;
   margin: 20px;
   box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.08);

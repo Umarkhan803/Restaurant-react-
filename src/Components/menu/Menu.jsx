@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Menulist from "./Menulist/Menulist";
 import { useNavigate } from "react-router-dom";
-function Menu() {
+function Menu({ handelClick }) {
   const navigate = useNavigate();
   const goToMenuListItem = () => {
     navigate("/menuList");
@@ -13,6 +13,7 @@ function Menu() {
       ItemName: "chicken Biryani",
       price: 499,
       ratings: 4.6,
+      amount: 1,
     },
     {
       id: 1,
@@ -20,6 +21,7 @@ function Menu() {
       ItemName: "Idli",
       price: 49,
       ratings: 3,
+      amount: 1,
     },
     {
       id: 2,
@@ -27,6 +29,7 @@ function Menu() {
       ItemName: "Dosa",
       price: 49,
       ratings: 4,
+      amount: 1,
     },
     {
       id: 3,
@@ -34,6 +37,7 @@ function Menu() {
       ItemName: "Egg Rice",
       price: 149,
       ratings: 4,
+      amount: 1,
     },
     {
       id: 4,
@@ -41,6 +45,7 @@ function Menu() {
       ItemName: "Burger",
       price: 99,
       ratings: 3.5,
+      amount: 1,
     },
     {
       id: 5,
@@ -48,6 +53,7 @@ function Menu() {
       ItemName: "Pizza",
       price: 150,
       ratings: 4,
+      amount: 1,
     },
     {
       id: 6,
@@ -55,6 +61,7 @@ function Menu() {
       ItemName: "Pudding",
       price: 120,
       ratings: 4.6,
+      amount: 1,
     },
     {
       id: 7,
@@ -62,6 +69,7 @@ function Menu() {
       ItemName: "Chicken Gravy",
       price: 249,
       ratings: 5,
+      amount: 1,
     },
     {
       id: 8,
@@ -69,6 +77,7 @@ function Menu() {
       ItemName: "Mutton Gravy",
       price: 540,
       ratings: 5,
+      amount: 1,
     },
   ]);
   return (
@@ -87,7 +96,7 @@ function Menu() {
           {items.map((item) => {
             return (
               <div className="food-card">
-                <Menulist data={item} />
+                <Menulist key={item} handelClick={handelClick} item={item} />
               </div>
             );
           })}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Menulist from "./Menulist/Menulist";
 
-function MenuListItems() {
+function MenuListItems(handelAddToCartClick) {
   const [items] = useState([
     {
       id: 0,
@@ -16,79 +16,79 @@ function MenuListItems() {
       price: 49,
     },
     {
-      id: 1,
+      id: 2,
       ItemImg: "food4.jpg",
       ItemName: "Dosa",
       price: 49,
     },
     {
-      id: 1,
+      id: 3,
       ItemImg: "food2.jpg",
       ItemName: "Egg Rice",
       price: 149,
     },
     {
-      id: 1,
+      id: 4,
       ItemImg: "food5.jpg",
       ItemName: "Burger",
       price: 99,
     },
     {
-      id: 1,
+      id: 5,
       ItemImg: "food6.jpg",
       ItemName: "Pizza",
       price: 150,
     },
     {
-      id: 1,
+      id: 6,
       ItemImg: "food15.jpg",
       ItemName: "Pudding",
       price: 120,
     },
     {
-      id: 1,
+      id: 7,
       ItemImg: "food9.jpg",
       ItemName: "Chicken Gravy",
       price: 249,
     },
     {
-      id: 1,
+      id: 8,
       ItemImg: "food10.jpg",
       ItemName: "Mutton Gravy",
       price: 540,
     },
     {
-      id: 1,
+      id: 9,
       ItemImg: "food11.jpg",
       ItemName: "Chicken Tadoor",
       price: 250,
     },
     {
-      id: 1,
+      id: 10,
       ItemImg: "food12.jpg",
       ItemName: "Fish Fry",
       price: 350,
     },
     {
-      id: 1,
+      id: 11,
       ItemImg: "food13.jpg",
       ItemName: "Gulab Jaamun",
       price: 99,
     },
     {
-      id: 1,
+      id: 12,
       ItemImg: "food14.jpg",
       ItemName: "Rass malai",
       price: 99,
     },
     {
-      id: 1,
+      id: 13,
       ItemImg: "food16.jpg",
       ItemName: "White Chocolate ",
       price: 149,
     },
     {
-      id: 1,
+      id: 14,
       ItemImg: "food17.jpg",
       ItemName: "Chocolate Cake",
       price: 149,
@@ -109,7 +109,11 @@ function MenuListItems() {
           {items.map((item) => {
             return (
               <div className="food-card">
-                <Menulist data={item} />
+                <Menulist
+                  key={item}
+                  item={item}
+                  handelAddToCartClick={handelAddToCartClick}
+                />
               </div>
             );
           })}

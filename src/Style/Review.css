@@ -7,6 +7,7 @@
 .review .heading {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  background-color: transparent;
   color: rgb(63, 62, 62);
   margin-left: 50px;
 }
@@ -18,7 +19,6 @@
 .review-box {
   margin: 0 15px;
   padding: 20px;
-  /* padding-bottom: 30px; */
   width: 250px;
   height: 300px;
   border: 2px solid black;

@@ -39,7 +39,7 @@ function Expert() {
         </div>
         <div className="chef-box">
           {items.map((item) => {
-            return <ExpertList data={item} />;
+            return <ExpertList key={item.id} data={item} />;
           })}
         </div>
       </section>

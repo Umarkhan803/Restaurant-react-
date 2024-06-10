@@ -64,6 +64,7 @@ i {
 }
 .nav-links {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   margin-right: 25px;
@@ -72,7 +73,10 @@ i {
   overflow: hidden;
   cursor: pointer;
 }
-
+.nav-links:nth-last-child(1) {
+  padding-right: 15px;
+  color: wheat;
+}
 .nav-links a:hover {
   color: #1efd00;
   transition: 0.5s;
@@ -104,4 +108,16 @@ i {
   list-style-type: none;
   color: black;
   margin-top: 8px;
+}
+
+.cartCount {
+  padding: 0 5px;
+  font-size: 13px;
+  color: white;
+  font-weight: 900;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  right: -0px;
+  top: 0px;
 }

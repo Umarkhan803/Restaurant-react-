@@ -6,12 +6,12 @@ import Review from "../Pages/Review";
 import Expert from "../Expert/Expert";
 import Footer from "../Footer/Footer";
 
-function Index() {
+function Index({ handelClick }) {
   return (
     <>
       <Main />
       <About />
-      <Menu />
+      <Menu handelClick={handelClick} />
       <Review />
       <Expert />
       <Footer />
