@@ -14,7 +14,6 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
 
   const handelClick = (item) => {
@@ -30,6 +29,7 @@ function App() {
     }
     setCart([...cart, item]);
   };
+
   const handleChange = (item, d) => {
     let ind = -1;
     cart.forEach((data, index) => {

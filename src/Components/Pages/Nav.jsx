@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Nav = ({ size }) => {
+  const auth = localStorage.getItem("user");
+
   return (
     <>
       <header>
@@ -10,7 +12,7 @@ const Nav = ({ size }) => {
           </a>
         </h3>
         <span className="dot">.</span>
-
+        <span>{auth}</span>
         <nav className="navigation">
           <ul className="nav-item">
             <li className="nav-links">

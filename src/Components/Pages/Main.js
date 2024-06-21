@@ -1,6 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Main() {
+  const navigate = useNavigate();
+  const auth = localStorage.getItem("user");
+  const logout = () => {
+    localStorage.clear();
+    navigate("/signup");
+  };
   return (
     <>
       <div className="main" id="banner">
@@ -9,14 +15,22 @@ function Main() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porr o hic
           quis error pariatur doloribus ab eos
         </p>
-        <div>
+        {auth ? (
           <button className="button">
-            <Link to="/login">Log In</Link>
+            <Link onClick={logout} to={"/"}>
+              logout
+            </Link>
           </button>
-          <button className="button">
-            <Link to="/signup">sign up</Link>
-          </button>
-        </div>
+        ) : (
+          <div>
+            <button className="button">
+              <Link to="/login">Log In</Link>
+            </button>
+            <button className="button">
+              <Link to="/signup">sign up</Link>
+            </button>
+          </div>
+        )}
       </div>
     </>
   );

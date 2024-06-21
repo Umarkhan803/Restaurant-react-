@@ -1,6 +1,12 @@
 import React from "react";
 
 const Menulist = ({ item, handelClick }) => {
+  const auth = localStorage.getItem("user");
+  // if (auth === false) {
+  //   // alert("login");
+  // } else if (auth === true) {
+  //   // alert("please login");
+  // }
   const { ItemImg, ItemName, ratings, price } = item;
   return (
     <>

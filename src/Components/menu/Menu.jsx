@@ -3,6 +3,7 @@ import Menulist from "./Menulist/Menulist";
 import { useNavigate } from "react-router-dom";
 function Menu({ handelClick }) {
   const navigate = useNavigate();
+
   const goToMenuListItem = () => {
     navigate("/menuList");
   };
