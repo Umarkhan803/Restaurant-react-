@@ -10,12 +10,12 @@ function Main() {
           quis error pariatur doloribus ab eos
         </p>
         <div>
-          <Link to="/login" className="button">
-            Log In
-          </Link>
-          <Link to="signup" className="button">
-            sign up
-          </Link>
+          <button className="button">
+            <Link to="/login">Log In</Link>
+          </button>
+          <button className="button">
+            <Link to="/signup">sign up</Link>
+          </button>
         </div>
       </div>
     </>

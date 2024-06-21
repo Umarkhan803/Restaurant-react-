@@ -4,6 +4,8 @@ import Nav from "./Components/Pages/Nav";
 import Cart from "./Components/Cart/Cart";
 import Index from "./Components/Layout/Index";
 import MenuListItems from "./Components/menu/MenuListItems";
+import Login from "./Components/Login/Login.jsx";
+import SignUp from "./Components/Signup/SignUp.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -57,6 +59,8 @@ function App() {
             }
           />
           <Route path="menuList" element={<MenuListItems />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
     </>

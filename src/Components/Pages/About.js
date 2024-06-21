@@ -10,7 +10,7 @@ const About = () => {
           <div className="about-line"></div>
         </div>
         <div className="About-txt-Wrapper">
-          <img className="image" src="images/coff.jpg" alt="" />
+          <div className="bg-image"></div>
           <div className="About-txt">
             <h1>We Pride overselves on </h1>
             <h1>Making Real Food The</h1>

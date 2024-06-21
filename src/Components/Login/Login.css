@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/public/images/bg3.jpg);
+}
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -5;
+  height: 100vh;
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  width: 420px;
+  padding: 30px 40px;
+}
+
+.Main h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+
+  width: 100%;
+  height: 50px;
+  margin: 10px 0px;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  border-radius: 40px;
+  font-size: 14px;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: rgba(0, 0, 0, 0.842);
+}
+
+.input-box img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  color: #000000;
+}
+
+.Main .remember {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 15px 0 15px;
+}
+
+.remember a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+.remember label input {
+  accent-color: #fff;
+  margin-top: 3px;
+}
+
+.Submit-Btn {
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  background: #fff;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  outline: 3px solid #1efd00;
+  outline-offset: -5px;
+  transition: 0.3s;
+}
+
+.Submit-Btn:hover {
+  outline-offset: 3px;
+}
+
+.register {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14.5px;
+}
+
+.register a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.register label,
+a {
+  cursor: pointer;
+}
