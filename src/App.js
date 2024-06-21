@@ -58,7 +58,10 @@ function App() {
               />
             }
           />
-          <Route path="menuList" element={<MenuListItems />} />
+          <Route
+            path="menuList"
+            element={<MenuListItems handelClick={handelClick} />}
+          />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<SignUp />} />
         </Routes>

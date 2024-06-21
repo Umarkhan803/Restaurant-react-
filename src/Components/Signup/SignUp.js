@@ -37,7 +37,7 @@ function SignUp() {
             <label for="" className="Rem-box">
               <input type="checkbox" name="" id="" /> Remember Me
             </label>
-            <input type="submit" className="Submit-Btn" value="Log in" />
+            <input type="submit" className="Submit-Btn" value="Sign up" />
             <div className="register"></div>
           </form>
         </div>
